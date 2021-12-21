@@ -1,6 +1,6 @@
 <h1 align = "center"> :page_with_curl: Resume Genrator :page_with_curl:</h1>
 
-## Resume Form 🤟
+<!-- ## Resume Form 🤟
 <div algin = "center">
 <img src="https://github.com/dsrathore1/Resume-Generator/blob/main/Assets/Resume-Generator-Google-Chrome-2.gif">
 </div>
@@ -9,11 +9,12 @@
 <div algin = "center">
 <img src="https://github.com/dsrathore1/Resume-Generator/blob/main/Assets/Resume-Generator-Google-Chrome-2%20(1).gif">
 </div>
-
+ -->
 
 ### I hope you like this project, if you wanna try it click on Resume Generator below :point_down:
 
-<h3 align = "center"> Visit :point_right: <a href= "https://resume-generator21.herokuapp.com/">Resume Generator</a> :scroll: </h3>
+<h3 align = "center"> Visit :point_right: <a href= "https://kunaljainwin.github.io/web/">Resume Generator</a> :scroll: </h3>
+# Credits:DS Rathore
 
 ## If you like the work please star the repository and follow me for awesome upcoming project on GitHub
 
