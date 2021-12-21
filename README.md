@@ -17,10 +17,7 @@
 
 ## If you like the work please star the repository and follow me for awesome upcoming project on GitHub
 
-credits:https://github.com/dsrathore1/Resume-Generator
-
 # Thank You!!!! :slightly_smiling_face:
 
 
 NOTE :- Photo upload is mandatory and all the details shown in gif Resume Template all are fake 
-credits:

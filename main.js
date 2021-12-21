@@ -67,7 +67,8 @@ const addEdButton = () => {
 
 //* Generate the resume button
 
-const generate_resume = () => {
+const generate_resume = async () => {
+
 
     //! One way to define the object
     let nameField = document.getElementById('firstField').value+" "+document.getElementById('lastField').value;
@@ -136,8 +137,7 @@ const generate_resume = () => {
     }
     
     //! Code for Generate the Resume
-    document.getElementById('resume-form').style.display = 'none'
-    document.getElementById('resume-template').style.display = 'flex'
+ 
 }
 
 //! Initializing Froala

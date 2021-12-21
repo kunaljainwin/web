@@ -97,7 +97,7 @@
                         <!-- Education Qualification -->
                         <div class="form-group" id="ed-container">
                             <label class="mt-3">Education Qualification</label>
-                            <input class="form-control edField" placeholder="Enter your Education Qualification">
+                            <input id="educationField" class="form-control edField" placeholder="Enter your Education Qualification">
                         </div>
                         <!-- <div class="edButton text-center">
                             <a onclick="addEdButton()" class="btn btn-outline-primary ed_button mt-2" role="button">Add
@@ -173,12 +173,10 @@
                         <!-- Generate Button -->
                     </div>
                     <div class="gn-btn-container text-center mt-5">
-                         <button id="btn" onclick="generate_resume();set_data();">
+                         <button id="btn" onclick="generate_resume(); upload_pic();">
                              generate
                          </button>
-                         <!-- <button id="btn1" onclick="set_data()">
-                            set
-                        </button> -->
+                         <input type="email" placeholder="Enter your email" id="searchQuery">
                          <button id="btn2" onclick="get_data()">
                             search resume
                         </button>
