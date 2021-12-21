@@ -15,7 +15,7 @@
 
 <h3 align = "center"> Visit :point_right: <a href= "https://kunaljainwin.github.io/web/">Resume Generator</a> :scroll: </h3>
 # Credits:https://youtu.be/aAdt0V3Ro_0
-Digpal,Gulshan,Ishan
+,Digpal,Gulshan,Ishan
 
 ## If you like the work please star the repository and follow me for awesome upcoming project on GitHub
 
