@@ -2,7 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase
 import { getFirestore,collection, addDoc, getDocs,query,where } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-storage.js";
 const firebaseConfig = {
-    
+        apiKey: "AIzaSyAwQZPQGg_69uKhXPXUgWCXgtLf3KDw2sA",
+    authDomain: "my-first-real-project-b401a.firebaseapp.com",
+    projectId: "my-first-real-project-b401a",
+    storageBucket: "my-first-real-project-b401a.appspot.com",
+    messagingSenderId: "744001694892",
+    appId: "1:744001694892:web:7a45e62dec510cc82c8309",
+    measurementId: "G-KSMH1LMYT4"
 };
 
 // Initialize Firebase
