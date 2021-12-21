@@ -1,5 +1,5 @@
 <h2 align = "center"> :page_with_curl: Resume Generator # Credits:https://youtu.be/aAdt0V3Ro_0
-,Digpal,Gulshan,Ishan:page_with_curl:</h2>
+,Gulshan,Ishan,Digpal:page_with_curl:</h2>
 
 <!-- ## Resume Form 🤟
 <div algin = "center">
