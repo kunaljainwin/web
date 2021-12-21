@@ -1,4 +1,5 @@
-<h1 align = "center"> :page_with_curl: Resume Generator :page_with_curl:</h1>
+<h1 align = "center"> :page_with_curl: Resume Generator # Credits:https://youtu.be/aAdt0V3Ro_0
+,Digpal,Gulshan,Ishan:page_with_curl:</h1>
 
 <!-- ## Resume Form 🤟
 <div algin = "center">
@@ -14,8 +15,7 @@
 ### I hope you like this project, if you wanna try it click on Resume Generator below :point_down:
 
 <h3 align = "center"> Visit :point_right: <a href= "https://kunaljainwin.github.io/web/">Resume Generator</a> :scroll: </h3>
-# Credits:https://youtu.be/aAdt0V3Ro_0
-,Digpal,Gulshan,Ishan
+
 
 ## If you like the work please star the repository and follow me for awesome upcoming project on GitHub
 
