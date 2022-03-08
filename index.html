@@ -20,13 +20,14 @@
 
 </head>
 
-<body> 
+<body > 
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
     <!-- Here goes html code -->
+
     <section class="container1" id="resume-form">
         <div class="container">
             <div class="container2">
@@ -34,24 +35,29 @@
                     <h1 class="mt-2 text-center">Resume Generator<br> by kunal jain</h1>
                     <p class="text-center mt-2">Frontend-html,css,javascript,bootstrap<br>Backend-firebase(firestore ,cloud storage)</p>
                 </div>
+                <a href="/search_page.html" class="link-dark" id="lnkhome">Go to Search Page<a></a>
+                <br>
+                <a href="/skill_search.html" id="lnkhome" class="link">Go to Skill Page<a>
 
                 <div class="row">
                     <!-- First coloumn -->
-                    <div class="col-md-6">
+      
                         <!-- <h3> Personal Information</h3> -->
-                        <label class="mt-3" required>Your First Name</label>
+                        <label class="mt-3" required>First Name</label>
                         <input type="text" placeholder="Enter your Name" class="form-control mt-1  name" id="firstField">
-                        <label class="mt-3" required>Your Last Name</label>
+                        <label class="mt-3" required>Last Name</label>
                         <input type="text" placeholder="Enter your Name" class="form-control mt-1  name" id="lastField">
-                        <label class="mt-3">Your Email</label>
-                        <input type="email" placeholder="example@domain.com" class="form-control mt-1 email"
+                        <label class="mt-3">Email</label>
+                        <input type="email" placeholder="rultimatrix@gmail.com" class="form-control mt-1 email"
                             id="emailField" required>
-                        <label class="mt-3" required>Phone number</label>
+                        <label class="mt-3" required>Phone Number</label>
                         <input type="number" placeholder="Enter Mobile Number" id="numField" class="form-control mt-1">
                         <label class="mt-3">Your Age</label>
-                        <input type="date" max="2005-02-25" class="form-control mt-1 name" id="dobField">
+                        <input type="date"  class="form-control mt-1 name" id="dobField">
                         <label class="mt-3">Profile Picture</label>
                         <input type="file" accept="image/*" class="form-control mt-1 name" id="dpField">
+                        <label class="mt-3">Signature</label>
+                        <input type="file" accept="image/*" class="form-control mt-1 name" id="signField">
                         <div class="form-group">
                             <label class="mt-3">Address</label>
                             <textarea maxlength="150" class="form-control" id="addressField"
@@ -61,18 +67,19 @@
                             <label class="mt-2 imp_links">Contact Links</label>
                             <p for="insta" class="gitHub mt-3"> <i class="fab fa-github"></i> GitHub </p>
                             <input type="url" class="form-control" id="githubField">
-                            <p for="linkedIn" class="linkedIn mt-2"> <i class="fab fa-linkedin-in"></i> LinkedIn</p>
+                            <p for="linkedIn" class="linkedIn mt-2"> <i class="fab fa-linkedin"></i> LinkedIn</p>
                             <input type="url" class="form-control" id="linkedField">
                             <p for="twitter" class="twitter mt-2"><i class="fab fa-twitter"></i> Twitter</p>
                             <input type="url" class="form-control" id="twitterField">
 
                         </div>
+                      
                         
-                    </div>
+              
 
 
                     <!-- Second coloumn -->
-                    <div class="col-md-6">
+               
                         <!-- <h3>Professional Information</h3> -->
                         <!-- Hobbies -->
                         <div id="hobbies-container">
@@ -151,7 +158,17 @@
                         <!-- Select position for job apply  -->
                         <label class="mt-5">Apply for the position</label>
                         <select name="applyForField" id="applyForField" class="mt-4 form-select">
+                            <option value="Software Engineer" >Software Engineer</option>
                             <option value="Backend Developer">Backend Developer</option>
+                            <option value="Network Administrator">Network Administrator</option>
+                            <option value="Network Engineer">Network Engineer</option>
+                            <option value="Network Technician">Network Technician</option>
+                            <option value="Network Analyst">Network Analyst</option>
+                            <option value="Network Manager">Network Manager</option>
+                            <option value="Machine learning">  Machine learning</option>
+                            <option value="Human machine interaction">Human machine interaction</option>
+                            <option value="Information security management system">Information security management system</option>
+                            <option value="Cyber forensics">Cyber forensics</option>
                             <option value="Frontend Developer">Frontend Developer</option>
                             <option value="UI/UX Desinger">UI/UX Desinger</option>
                             <option value="Graphics Desinger">Graphics Desinger</option>
@@ -160,7 +177,7 @@
                             <option value="Video Editor">Video Editor</option>
                             <option value="PhotoEditor">Photo Editor</option>
                             <option value="Music Composer">Music Composer</option>
-                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Social engineering">Social engineering</option>
                             <option value="Data Scientist">Data Scientist</option>
                             <option value="AI/Machine Learning">AI/Machine Learning</option>
                             <option value="Web Developer">Web Developer</option>
@@ -171,17 +188,21 @@
 
 
                         <!-- Generate Button -->
-                    </div>
+                
                     <div class="gn-btn-container text-center mt-5">
-                         <button id="btn" onclick="generate_resume(); upload_pic();">
+                         <button id="btn" onclick="generate_resume(); upload_pic();" class="btn btn-outline-danger hobbies_button">
                              generate
                          </button>
-                         <input type="email" placeholder="Enter your email" id="searchQuery">
-                         <button id="btn2" onclick="get_data()">
+                         <input type="email" placeholder="Enter your email" id="searchQuery" class="form-control mt-1">
+                         <br>
+                         <button id="btn2" onclick="get_data()" class="btn btn-outline-danger hobbies_button">
                             search resume
                         </button>
                       
                     </div>
+                    <a href="/search_page.html" id="lnkhome" class="link">Go to Search Page<a>
+                        <br>
+                        <a href="/skill_search.html" id="lnkhome" class="link">Go to Skill Page<a>
                 </div>
                 </div>
             </div>
@@ -192,11 +213,15 @@
 <!--  -->
 <section class="container3" id="resume-template">
     <div class="container resume-template1">
-        <div class="row">
+        <div class="row" id="printDiv">
             <!-- first coloumn -->
             <div class="col-md-4 text-center coloumn4">
+                < <img src="https://tse2.mm.bing.net/th?id=OIP.YpQ0oZGLK4k09k6sq354OwHaHx&pid=Api&P=0&w=300&h=300"
+                class="my-dp" id="dpT" alt="no-img-found">
+                <div>Signature</div>
                 <img src="https://tse2.mm.bing.net/th?id=OIP.YpQ0oZGLK4k09k6sq354OwHaHx&pid=Api&P=0&w=300&h=300"
-                    class="img-fluid my-dp" id="dpT" alt="no-img-found">
+                 id="signT" alt="no-img-found"  width="100" height="50"  >
+            
                 <p id="dobT">23-04-2001</p>
                 <p class="name" id="nameT1">Dr. Namrata Chamling</p>
                 <p id="emailT" style="font-weight: 500;">abhatta@shakya.com.np</p>
@@ -321,11 +346,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center ">
-                    <button type="button" onclick="print_resume()" class="print_button" role="button">Print
-                        Resume</button>
-                </div>
+                
+               
             </div>
+           
+        </div>
+        <div class="text-center ">
+            <button type="button" onclick="print_resume()" class="print_button" role="button">Print
+                Resume</button>
         </div>
     </div>
 </section>
@@ -344,6 +372,6 @@
     <script type="module"src="script.js"></script>
     <script type="text/javascript"  src="main.js"></script>
     
-</body>
+</body >
 
 </html>

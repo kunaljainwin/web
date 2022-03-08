@@ -124,17 +124,25 @@ const generate_resume = async () => {
     //! Code for Setting DP
     
     let file =document.getElementById('dpField').files[0].size>1000? document.getElementById('dpField').files[0]:null;
+    let signfile =document.getElementById('signField').files[0].size>1000? document.getElementById('signField').files[0]:null;
     // console.log(file);
     //////////////////////////////////////////////////////////////////////
     let reader = new FileReader();
+    let signreader = new FileReader();
     reader.readAsDataURL(file);
-    // console.log(reader.result);
-    
-    
-    //* set image to the template
     reader.onloadend = function () {
         document.getElementById('dpT').src = reader.result;
     }
+    signreader.readAsDataURL(signfile);
+    signreader.onloadend = function () {
+        document.getElementById('signT').src = signreader.result;
+    }
+    
+    
+    
+    //* set image to the template
+
+    
     
     //! Code for Generate the Resume
  
@@ -144,7 +152,15 @@ const generate_resume = async () => {
 // var editor = new FroalaEditor('#example')
 
 //! Print the Resume    
-function print_resume() {
-    window.print();
+ function print_resume() {
+    var prtContent = document.getElementById("printDiv");
+var WinPrint = window.open('', '', 'left=0,top=0,width=400,height=900,toolbar=0,scrollbars=0,status=0');
+WinPrint.document.write('<html><head>');
+WinPrint.document.write('<link rel="stylesheet" href="style.css">');
+WinPrint.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">');
+WinPrint.document.write('</head><body>');
+WinPrint.document.write(prtContent.innerHTML);
+WinPrint.document.write('</body></html>');
+WinPrint.document.write('<script>print(); close();</script>');
 }
 

@@ -19,7 +19,8 @@ body {
 }
 
 .container1 {
-    height: 250vh;
+    padding: 3rem 1.8rem 1.9rem 1.9rem;
+    /* height: 250vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220vh;
+    /* height: 220vh; */
     background-color: #FFDEE9;
     background-image: linear-gradient(62deg, #FFDEE9 0%, #B5FFFC 100%);
 }
@@ -160,11 +161,13 @@ select {
 
 
 .my-dp {
-    width: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
 .resume-template1 {
+    
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -274,14 +277,14 @@ select {
 }
 
 
-@media screen and (max-width:1100px) {
+ /* @media screen and (max-width:1100px) {
     #resume-form {
         height: 320vh;
     }
 
-}
+} */
 
-@media screen and (max-width:760px) {
+/* @media screen and (max-width:760px) {
     #resume-template {
         height: 300vh;
     }
@@ -293,4 +296,4 @@ select {
     .gn_btn {
         width: 80%;
     }
-}
+}  */ 
